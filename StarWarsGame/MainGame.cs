@@ -1,4 +1,5 @@
-﻿namespace StarWarsGame
+﻿using StarWarsGameLibrary;
+namespace StarWarsGame
 {
     internal class MainGame
     {
@@ -24,8 +25,8 @@ Console.WriteLine("            ________   ___   ____\r\n           / __   __| / 
                 "\nI'm C5-08." +
                 "\nI'm a Servant Droid from the Bounty Hunters Guild. I'm here to help you get your Bounty Hunting Career started." +
                 "\nAnd for you to make a name for yourself in this DANGEROUS life of Bounty Hunting....");
-            Console.WriteLine("\n\nWhen you're ready to begin press anykey...");
-            Console.ReadLine();
+            Console.WriteLine("\n\nPlease Enter your Bounty Hunter's Name...");
+            Console.ReadLine() ;
         }
     }
 }
