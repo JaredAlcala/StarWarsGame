@@ -1,6 +1,6 @@
 ﻿namespace StarWarsGameLibrary
 {
-    public class Character
+    public abstract class Character
     {
         //Fields
 
@@ -30,7 +30,7 @@
         public int Life
         {
             get { return _life; }
-            set { _life = value; }
+            set { _life = value <= _maxLife? value:_maxLife; }
         }
 
 

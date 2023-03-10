@@ -89,7 +89,7 @@ namespace StarWarsGameLibrary
                 $"Is Two Handed: {IsTwoHanded}\n";
         }
 
-        public static Weapons GetWeapon(WeaponTypes type)
+        public static Weapons GetWeapon()
         {
             Weapons w1 = new(5, 1, "Fists", 5, true, WeaponTypes.Fists);
             Weapons w2 = new(10, 4, "DC-17 Blaster Pistol", 5, true, WeaponTypes.DC17_Pistol);
@@ -101,9 +101,9 @@ namespace StarWarsGameLibrary
             Weapons w8 = new(25, 6, "Cycler Rifle", 5, false, WeaponTypes.Cycler_Rifle);
             Weapons w9 = new(20, 6, "E-11 Blaster Rifle", 5, false, WeaponTypes.E11_Blaster_Rifle);
 
-            List<Weapons> weapon = new()
+            List<Weapons> equippedWeapon = new()
             {
-                w1,
+               
                 w2,
                 w3,
                 w4,
@@ -114,7 +114,7 @@ namespace StarWarsGameLibrary
                 w9,
             };
 
-            return Weapons.GetWeapon(type);
+            return equippedWeapon[new Random().Next(equippedWeapon.Count)]; ;
         }
     }
 }
