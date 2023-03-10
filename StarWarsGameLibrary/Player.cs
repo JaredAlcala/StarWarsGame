@@ -26,16 +26,28 @@ namespace StarWarsGameLibrary
             switch (PlayerRace)
             {
                 case Race.Rodians:
+                    HitChance += 7;
+                    MaxLife += 4;
                     break;
                 case Race.Wookie:
+                    HitChance += 15;
+                    MaxLife += 9;
                     break;
                 case Race.Mandalorian:
+                    HitChance += 10;
+                    MaxLife += 12;
                     break;
                 case Race.Human:
+                    HitChance += 7;
+                    MaxLife += 3;
                     break;
                 case Race.Trandoshan:
+                    HitChance += 6;
+                    MaxLife += 4;
                     break;
                 case Race.Duros:
+                    HitChance += 10;
+                    MaxLife += 7;
                     break;
 
             }
