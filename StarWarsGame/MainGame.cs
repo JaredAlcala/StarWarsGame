@@ -203,7 +203,7 @@ namespace StarWarsGame
                                 if (weaponInput == ConsoleKey.Y)
                                 {
                                     player.EquippedWeapon = newWeapon;
-                                Console.WriteLine($"You took the {bounty.Name}'s {newWeapon.Name}");
+                                Console.WriteLine($"You took the {newWeapon.Name}");
                                 }
 
                                 Console.ResetColor();
